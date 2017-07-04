@@ -12,6 +12,8 @@
 		24AF3B3E1F0A93950098152A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AF3B321F0A93680098152A /* AppDelegate.swift */; };
 		24AF3B401F0A93CD0098152A /* TDNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AF3B3F1F0A93CD0098152A /* TDNavigationController.swift */; };
 		24AF3B421F0A93E50098152A /* TDBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AF3B411F0A93E50098152A /* TDBaseViewController.swift */; };
+		BDCFDC371F0B99DB006706A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24AF3B391F0A93680098152A /* LaunchScreen.storyboard */; };
+		BDCFDC3A1F0B9A1D006706A8 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = BDCFDC391F0B9A1D006706A8 /* test.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,7 @@
 		24AF3B3D1F0A93680098152A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24AF3B3F1F0A93CD0098152A /* TDNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDNavigationController.swift; sourceTree = "<group>"; };
 		24AF3B411F0A93E50098152A /* TDBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDBaseViewController.swift; sourceTree = "<group>"; };
+		BDCFDC391F0B9A1D006706A8 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +175,7 @@
 		24AF3B371F0A93680098152A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BDCFDC391F0B9A1D006706A8 /* test.png */,
 				24AF3B381F0A93680098152A /* Assets.xcassets */,
 				24AF3B391F0A93680098152A /* LaunchScreen.storyboard */,
 				24AF3B3D1F0A93680098152A /* Info.plist */,
@@ -283,6 +287,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDCFDC371F0B99DB006706A8 /* LaunchScreen.storyboard in Resources */,
+				BDCFDC3A1F0B9A1D006706A8 /* test.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +414,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -455,6 +462,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -470,7 +478,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HuangZhen.todo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -486,7 +494,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HuangZhen.todo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -500,7 +508,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HuangZhen.todoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/todo.app/todo";
 			};
@@ -515,7 +523,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HuangZhen.todoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/todo.app/todo";
 			};
@@ -529,7 +537,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HuangZhen.todoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = todo;
 			};
@@ -543,7 +551,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HuangZhen.todoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = todo;
 			};
@@ -568,6 +576,7 @@
 				24AF3B291F0A917C0098152A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		24AF3B2A1F0A917C0098152A /* Build configuration list for PBXNativeTarget "todoTests" */ = {
 			isa = XCConfigurationList;
@@ -576,6 +585,7 @@
 				24AF3B2C1F0A917C0098152A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		24AF3B2D1F0A917C0098152A /* Build configuration list for PBXNativeTarget "todoUITests" */ = {
 			isa = XCConfigurationList;
@@ -584,6 +594,7 @@
 				24AF3B2F1F0A917C0098152A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
