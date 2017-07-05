@@ -9,10 +9,11 @@
 import UIKit
 
 class TDBaseViewController: UIViewController {
-
+    
+    var model: TDBaseModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .white
         // Do any additional setup after loading the view.
     }
 
@@ -21,6 +22,12 @@ class TDBaseViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func createModel(modelClass: AnyClass) {
+        if modelClass is TDBaseModel.Type {
+            model = (modelClass as! TDBaseModel.Type).init()
+            model!.controller = self
+        }
+    }
 
     /*
     // MARK: - Navigation

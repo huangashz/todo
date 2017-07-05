@@ -32,7 +32,7 @@ class TDTabBarController: UITabBarController {
     }
     
     func setupAllChildVC() {
-        let mainVC : TDNavigationController = TDNavigationController.init(rootViewController:TDBaseViewController())
+        let mainVC : TDNavigationController = TDNavigationController.init(rootViewController:TDTaskListViewController())
         mainVC.tabBarItem.title = "Ashe"
          self.viewControllers = [mainVC]
     }
