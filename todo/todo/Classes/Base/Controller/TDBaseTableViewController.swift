@@ -24,11 +24,6 @@ class TDBaseTableViewController: TDBaseViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     func createDelegate(delegateClass: AnyClass, dataSourceClass: AnyClass) {
         if delegateClass is TDBaseTableViewDelegate.Type {

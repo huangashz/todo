@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24731AC91F0D3AD60048E1BE /* TDTaskListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24731AC81F0D3AD60048E1BE /* TDTaskListDataSource.swift */; };
+		24731ACB1F0D3AF40048E1BE /* TDTaskListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24731ACA1F0D3AF40048E1BE /* TDTaskListDelegate.swift */; };
+		24731ACD1F0D3B1C0048E1BE /* TDTaskListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24731ACC1F0D3B1C0048E1BE /* TDTaskListCell.swift */; };
 		24AF3B181F0A917C0098152A /* todoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AF3B171F0A917C0098152A /* todoTests.swift */; };
 		24AF3B231F0A917C0098152A /* todoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AF3B221F0A917C0098152A /* todoUITests.swift */; };
 		24AF3B3E1F0A93950098152A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AF3B321F0A93680098152A /* AppDelegate.swift */; };
@@ -42,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24731AC81F0D3AD60048E1BE /* TDTaskListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDTaskListDataSource.swift; sourceTree = "<group>"; };
+		24731ACA1F0D3AF40048E1BE /* TDTaskListDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDTaskListDelegate.swift; sourceTree = "<group>"; };
+		24731ACC1F0D3B1C0048E1BE /* TDTaskListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDTaskListCell.swift; sourceTree = "<group>"; };
 		24AF3AFF1F0A917C0098152A /* todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24AF3B131F0A917C0098152A /* todoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = todoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24AF3B171F0A917C0098152A /* todoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todoTests.swift; sourceTree = "<group>"; };
@@ -91,6 +97,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24731AC51F0D3AA60048E1BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				24731ACC1F0D3B1C0048E1BE /* TDTaskListCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		24731AC61F0D3AA60048E1BE /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				24731AC81F0D3AD60048E1BE /* TDTaskListDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		24731AC71F0D3AA60048E1BE /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				24731ACA1F0D3AF40048E1BE /* TDTaskListDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
 		24AF3AF61F0A917C0098152A = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +247,9 @@
 		24AF3B4D1F0D23F50098152A /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				24731AC61F0D3AA60048E1BE /* DataSource */,
+				24731AC71F0D3AA60048E1BE /* Delegate */,
+				24731AC51F0D3AA60048E1BE /* View */,
 				24AF3B4E1F0D23F50098152A /* Controller */,
 				24AF3B4F1F0D23F50098152A /* Model */,
 			);
@@ -387,7 +420,10 @@
 				24AF3B401F0A93CD0098152A /* TDNavigationController.swift in Sources */,
 				24AF3B571F0D391E0098152A /* TDTaskListViewController.swift in Sources */,
 				24AF3B4C1F0D23EB0098152A /* TDBaseTableViewDataSource.swift in Sources */,
+				24731ACD1F0D3B1C0048E1BE /* TDTaskListCell.swift in Sources */,
 				BD761FFD1F0BA15A00BE3868 /* TDTabBarController.swift in Sources */,
+				24731AC91F0D3AD60048E1BE /* TDTaskListDataSource.swift in Sources */,
+				24731ACB1F0D3AF40048E1BE /* TDTaskListDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
