@@ -15,6 +15,11 @@ class TDBaseModel: NSObject {
     
     required override init() {
         super.init()
+        dataArray = Array()
+    }
+    
+    func load() {
+        
     }
     
 }

@@ -9,5 +9,9 @@
 import UIKit
 
 class TDTaskListDelegate: TDBaseTableViewDelegate {
-
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+    
 }

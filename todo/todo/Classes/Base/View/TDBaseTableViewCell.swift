@@ -10,6 +10,20 @@ import UIKit
 
 class TDBaseTableViewCell: UITableViewCell {
 
+    var bottomLine: UIView?
+    
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        selectionStyle = .none
+        bottomLine = UIView.init(frame: CGRect.init(x: 0, y: contentView.frame.size.height - 1, width: UIScreen.main.bounds.width, height: 0.5))
+        bottomLine?.backgroundColor = UIColor.gray
+        contentView.addSubview(bottomLine!)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -23,6 +23,7 @@
 		24AF3B571F0D391E0098152A /* TDTaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AF3B501F0D24160098152A /* TDTaskListViewController.swift */; };
 		BD761FFD1F0BA15A00BE3868 /* TDTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD761FFC1F0BA15A00BE3868 /* TDTabBarController.swift */; };
 		BD761FFF1F0BA4E100BE3868 /* TDBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD761FFE1F0BA4E100BE3868 /* TDBaseTableViewController.swift */; };
+		BD7620101F0E104A00BE3868 /* TDTaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD76200F1F0E104A00BE3868 /* TDTaskItem.swift */; };
 		BDCFDC371F0B99DB006706A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24AF3B391F0A93680098152A /* LaunchScreen.storyboard */; };
 		BDCFDC3A1F0B9A1D006706A8 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = BDCFDC391F0B9A1D006706A8 /* test.png */; };
 /* End PBXBuildFile section */
@@ -69,6 +70,7 @@
 		24AF3B551F0D37980098152A /* TDBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDBaseTableViewCell.swift; sourceTree = "<group>"; };
 		BD761FFC1F0BA15A00BE3868 /* TDTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDTabBarController.swift; sourceTree = "<group>"; };
 		BD761FFE1F0BA4E100BE3868 /* TDBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDBaseTableViewController.swift; sourceTree = "<group>"; };
+		BD76200F1F0E104A00BE3868 /* TDTaskItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDTaskItem.swift; sourceTree = "<group>"; };
 		BDCFDC391F0B9A1D006706A8 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -268,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				24AF3B511F0D24440098152A /* TDTaskListModel.swift */,
+				BD76200F1F0E104A00BE3868 /* TDTaskItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				TargetAttributes = {
 					24AF3AFE1F0A917C0098152A = {
 						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
 					};
 					24AF3B121F0A917C0098152A = {
 						CreatedOnToolsVersion = 9.0;
@@ -420,6 +424,7 @@
 				24AF3B401F0A93CD0098152A /* TDNavigationController.swift in Sources */,
 				24AF3B571F0D391E0098152A /* TDTaskListViewController.swift in Sources */,
 				24AF3B4C1F0D23EB0098152A /* TDBaseTableViewDataSource.swift in Sources */,
+				BD7620101F0E104A00BE3868 /* TDTaskItem.swift in Sources */,
 				24731ACD1F0D3B1C0048E1BE /* TDTaskListCell.swift in Sources */,
 				BD761FFD1F0BA15A00BE3868 /* TDTabBarController.swift in Sources */,
 				24731AC91F0D3AD60048E1BE /* TDTaskListDataSource.swift in Sources */,
@@ -580,12 +585,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = S2XPY7G7HH;
 				INFOPLIST_FILE = "$(SRCROOT)/todo/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HuangZhen.todo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -596,12 +603,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = S2XPY7G7HH;
 				INFOPLIST_FILE = "$(SRCROOT)/todo/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HuangZhen.todo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
