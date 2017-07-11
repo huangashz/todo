@@ -1,0 +1,13 @@
+
+platform :ios, ‘8.0’
+use_frameworks!
+inhibit_all_warnings!
+
+def shared_pods
+    pod 'RealmSwift'
+end
+
+target ‘todo’ do
+    shared_pods
+    project ‘todo’
+end
