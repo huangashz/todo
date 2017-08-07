@@ -17,6 +17,7 @@ class TDBaseTableViewController: TDBaseViewController {
     override func loadView() {
         super.loadView()
         tableView = UITableView.init(frame: view.bounds, style: .plain)
+        tableView?.clipsToBounds = true
         view.addSubview(tableView!)
     }
     

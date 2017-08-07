@@ -21,6 +21,7 @@
 		24AF3B531F0D24CB0098152A /* TDBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AF3B481F0D23B30098152A /* TDBaseModel.swift */; };
 		24AF3B561F0D37980098152A /* TDBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AF3B551F0D37980098152A /* TDBaseTableViewCell.swift */; };
 		24AF3B571F0D391E0098152A /* TDTaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AF3B501F0D24160098152A /* TDTaskListViewController.swift */; };
+		24F65A1B1F38B3A1007E0A12 /* TDConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F65A1A1F38B3A1007E0A12 /* TDConst.swift */; };
 		BD761FFD1F0BA15A00BE3868 /* TDTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD761FFC1F0BA15A00BE3868 /* TDTabBarController.swift */; };
 		BD761FFF1F0BA4E100BE3868 /* TDBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD761FFE1F0BA4E100BE3868 /* TDBaseTableViewController.swift */; };
 		BDCFDC371F0B99DB006706A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24AF3B391F0A93680098152A /* LaunchScreen.storyboard */; };
@@ -67,6 +68,7 @@
 		24AF3B501F0D24160098152A /* TDTaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDTaskListViewController.swift; sourceTree = "<group>"; };
 		24AF3B511F0D24440098152A /* TDTaskListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDTaskListModel.swift; sourceTree = "<group>"; };
 		24AF3B551F0D37980098152A /* TDBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDBaseTableViewCell.swift; sourceTree = "<group>"; };
+		24F65A1A1F38B3A1007E0A12 /* TDConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDConst.swift; sourceTree = "<group>"; };
 		BD761FFC1F0BA15A00BE3868 /* TDTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDTabBarController.swift; sourceTree = "<group>"; };
 		BD761FFE1F0BA4E100BE3868 /* TDBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDBaseTableViewController.swift; sourceTree = "<group>"; };
 		BDCFDC391F0B9A1D006706A8 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 		24AF3B301F0A93680098152A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				24F65A171F38B1ED007E0A12 /* Common */,
 				24AF3B4D1F0D23F50098152A /* Main */,
 				24AF3B311F0A93680098152A /* AppDelegate */,
 				24AF3B331F0A93680098152A /* Base */,
@@ -278,6 +281,14 @@
 				24AF3B551F0D37980098152A /* TDBaseTableViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		24F65A171F38B1ED007E0A12 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				24F65A1A1F38B3A1007E0A12 /* TDConst.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -423,6 +434,7 @@
 				24731ACD1F0D3B1C0048E1BE /* TDTaskListCell.swift in Sources */,
 				BD761FFD1F0BA15A00BE3868 /* TDTabBarController.swift in Sources */,
 				24731AC91F0D3AD60048E1BE /* TDTaskListDataSource.swift in Sources */,
+				24F65A1B1F38B3A1007E0A12 /* TDConst.swift in Sources */,
 				24731ACB1F0D3AF40048E1BE /* TDTaskListDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
