@@ -10,9 +10,12 @@ import UIKit
 
 class TDTaskListCell: TDBaseTableViewCell {
     
+    var bgView : UIView?
+    
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         selectionStyle = .none
+        self.setUpUI()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -29,5 +32,13 @@ class TDTaskListCell: TDBaseTableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
+    func setUpUI() {
+        bgView = UIView.init(frame: CGRect.init(x: 10, y: 10, width: APP_SCREEN_WIDTH - 20, height: 80))
+        bgView?.clipsToBounds = true
+        bgView?.layer.cornerRadius = 10
+        bgView?.backgroundColor = TDColorTools.randomColor()
+        self.contentView .addSubview(bgView!)
+    }
+    
 }

@@ -18,6 +18,7 @@ class TDBaseTableViewController: TDBaseViewController {
         super.loadView()
         tableView = UITableView.init(frame: view.bounds, style: .plain)
         tableView?.clipsToBounds = true
+        tableView?.separatorStyle = .none
         view.addSubview(tableView!)
     }
     

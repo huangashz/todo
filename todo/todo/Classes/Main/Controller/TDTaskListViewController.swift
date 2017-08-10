@@ -22,6 +22,7 @@ class TDTaskListViewController: TDBaseTableViewController {
         tableView?.frame = CGRect.init(x: 0, y: APP_STATUSBAR_HEIGHT, width: width, height: height)
         tableView?.separatorStyle = .none
         self.createModel(modelClass: TDTaskListModel.self)
+        model?.load()
         self.createDelegate(delegateClass: TDTaskListDelegate.self, dataSourceClass: TDTaskListDataSource.self)
         // Do any additional setup after loading the view.
     }    
